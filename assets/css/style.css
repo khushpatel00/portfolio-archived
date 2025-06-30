@@ -19,6 +19,37 @@ html {
   z-index: 1000;
   /* transition: 2s all !important*/
 }
+.banner {
+  /* width: 100%; */
+  /* height: 100vh; */
+  --color: rgba(180, 180, 180, 0.3);
+  background-color: #000000;
+  background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+      linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+  background-size: 70px 70px;
+  position: relative;
+}
+.banner::after{
+  content: '';
+  position: absolute;
+  box-sizing: border-box;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(0deg,rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.banner::before{
+  content: '';
+  position: absolute;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(0deg,rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
+}
+
 
 .preloader {
   --uib-size: 35px;
@@ -148,8 +179,8 @@ header {
 .headerGlass {
   background: #0000008a;
   /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);*/
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(6.7px);
+  /* backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(6.7px); */
   padding: 0 15px;
   border-radius: 10px;
 }
@@ -347,9 +378,7 @@ section:not(.noAnim) {
 }
 
 section.about {
-  animation: appearAbout linear;
-  animation-timeline: view();
-  animation-range: entry -10% exit 0%;
+  transform: translateY(-25%);
   border-radius: 2rem;
   margin: 30px;
 }
@@ -418,14 +447,14 @@ transform: translateX(0%);
 
 @keyframes appearToTopEdu {
   0% {
-    transform: translateY(800px);
+    transform: translateY(1000px);
     -webkit-box-shadow: 0px 22px 161px -100px rgb(255, 0, 0);
     -moz-box-shadow: 0px 22px 161px -100px rgb(255, 0, 0);
     box-shadow: 0px 22px 161px -100px rgb(255, 0, 0);
   }
 
   100% {
-    transform: translateY(-50%);
+    transform: translateY(0%);
     -webkit-box-shadow: 0px 15px 161px -60px rgba(45, 60, 203);
     -moz-box-shadow: 0px 15px 161px -60px rgba(45, 60, 203);
     box-shadow: 0px 15px 161px -60px rgba(45, 60, 203);
@@ -735,7 +764,6 @@ p.contact.heading:after {
   /* animation-delay: 600ms;*/
   animation-timeline: view();
   animation-range: entry -10% cover 50%;
-
 }
 
 @keyframes blurry {
@@ -749,11 +777,13 @@ p.contact.heading:after {
 }
 
 .banner {
-  min-height: 100vh;
+  min-height: 130vh;
   display: flex;
   align-items: center;
 }
-
+#particles-js{
+  background: #838383;
+}
 .cardHead {
   width: 90%;
   height: 500px;
