@@ -12,6 +12,7 @@ html {
   -moz-filter: saturate(1.8) brightness(-0.25) contrast(1.55) !important;
   -webkit-filter: saturate(1.8) brightness(-0.25) contrast(1.55) !important;
   filter: saturate(1.8) brightness(-0.25) contrast(1.55) !important;
+  transition: 0.3s all;
 }
 
 #preloader {
@@ -496,7 +497,7 @@ transform: translateX(0%);
 }
 
 .bannerTitle {
-  font-size: clamp(30px, 40px, 100px);
+  font-size: clamp(30px, 50px, 100px);
   font-weight: 900;
   color: transparent;
   /* padding: 100px 0 50px; */
@@ -678,13 +679,42 @@ transform: translateX(0%);
 
 .typoText {
   position: absolute;
-  right: -120px;
-  top: 250px;
+  right: 0px;
+  top: 150px;
   font-size: 120px;
   font-weight: 700;
   transform: rotate(90deg);
   opacity: 0.2;
   color: black !important;
+  animation: typoFont 4s infinite;
+  transition: 0.5s;
+}
+.typoPseudo{
+  position: relative;
+}
+.typoPseudo::after{
+  position: absolute;
+  content: 'ABOUT';
+  box-sizing: border-box;
+}
+
+@keyframes typoFont {
+  0%{
+    font-weight: 800;
+  }
+  15%{
+    font-weight: 300;
+  }
+  
+  40%{
+    font-weight: 700;
+  }
+  50%{
+    font-weight: 100
+  }
+  80%{
+    font-weight: 500;
+  }
 }
 
 /* .about p.heading:after {background-color: #000;}*/
@@ -1067,4 +1097,8 @@ p.contact.heading:after {
 
 .h-0 {
   height: 0 !important;
+}
+
+.c-h-10{
+  height: 10vh !important;
 }

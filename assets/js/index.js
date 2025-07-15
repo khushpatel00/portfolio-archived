@@ -77,3 +77,8 @@ const iFrameOpen = function () {
   // }
 };
 document.addEventListener("DOMContentLoaded", iFrameOpen);
+
+aboutExpander = document.getElementById("aboutExpand");
+aboutExpander.onclick = function () {
+  aboutExpander.classList.remove("c-h-10"); 
+}
