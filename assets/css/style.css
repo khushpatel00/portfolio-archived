@@ -687,7 +687,7 @@ transform: translateX(0%);
   opacity: 0.2;
   color: black !important;
   animation: typoFont 4s infinite;
-  transition: 0.5s;
+  transition: 0.1s;
 }
 .typoPseudo{
   position: relative;

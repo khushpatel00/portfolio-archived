@@ -34,7 +34,7 @@ const iFrameOpen = function () {
   iFrameContentNestify = document.getElementsByClassName("project-content-Nestify");
 
   // revertIFrame = document.getElementsByClassName("revertIFrame");
-  iFrameElementCoffeeHead.onclick = function () {
+  iFrameElementCoffeeHead.onclick = () => {
     iFrameElementCoffeeHead.classList.remove("col-lg-6");
     iFrameElementCoffeeHead.classList.add("col-12", "mx-auto", "mt-5", "ps-5");
     iFrameElementCoffee.classList.remove("h-0");
@@ -43,7 +43,7 @@ const iFrameOpen = function () {
     // revertIFrame.classList.add("d-flex","text-danger");
     // revertIFrame.classList.remove("d-none");
   };
-  iFrameElementDekoroHead.onclick = function () {
+  iFrameElementDekoroHead.onclick = () => {
     iFrameElementDekoroHead.classList.remove("col-lg-6");
     iFrameElementDekoroHead.classList.add("col-12", "mx-auto", "mt-5", "ps-5");
     iFrameElementDekoro.classList.remove("h-0");
@@ -51,7 +51,7 @@ const iFrameOpen = function () {
     // revertIFrame.classList.add("d-flex","text-danger");
     // revertIFrame.classList.remove("d-none");
   };
-  iFrameElementA2ZHead.onclick = function () {
+  iFrameElementA2ZHead.onclick = () => {
     iFrameElementA2ZHead.classList.remove("col-lg-6");
     iFrameElementA2ZHead.classList.add("col-12", "mx-auto", "mt-5", "ps-5");
     iFrameElementA2Z.classList.remove("h-0");
@@ -59,7 +59,7 @@ const iFrameOpen = function () {
     // revertIFrame.classList.add("d-flex","text-danger");
     // revertIFrame.classList.remove("d-none");
   };
-  iFrameElementNestifyHead.onclick = function () {
+  iFrameElementNestifyHead.onclick = () => {
     iFrameElementNestifyHead.classList.remove("col-lg-6");
     iFrameElementNestifyHead.classList.add("col-12", "mx-auto", "mt-5", "ps-5");
     iFrameElementNestify.classList.remove("h-0");
