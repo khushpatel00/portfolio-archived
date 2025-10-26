@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#000000">
     <title>Khush Patel</title>
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.test.css">
+
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/stylesheet.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/media.css">
+
     <link rel="preload" href="assets/images/pr4-live-a2z.png" as="image">
     <link rel="preload" href="assets/images/pr1-coffee.png" as="image">
     <link rel="preload" href="assets/images/pr2-Dekoro.png" as="image">
@@ -30,7 +32,7 @@
 
 <body class="bg-black" id="home">
 
-    <!-- <div id="preloader" class="position-fixed top-0 start-0 w-100  preloader-wrapper">
+    <div id="preloader" class="position-fixed top-0 start-0 w-100  preloader-wrapper">
         <div class="d-flex justify-content-center h-100 align-items-center">
             <div class="preloader">
                 <div class="circle"></div>
@@ -80,7 +82,7 @@
                 mainContent.classList.remove("hidden");
             });
         });
-    </script> -->
+    </script>
 
     <div class="goToTop px-2 py-1">
         <a href="#" class="text-decoration-none letterTransition text-end" style="color: transparent;">
@@ -91,93 +93,35 @@
 
     <!-- header start -->
 
-    <div class="offcanvas bg-transparent offcanvas-end w-100  text-bg-dark border-0" data-bs-scroll="true" tabindex="-1"
-        id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-        <div class="offcanvas-header bg-black rounded-3 m-3 mb-0 ">
-            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Menu</h5>
-            <button type="button" class="btn-close bg-white px-3 " data-bs-dismiss="offcanvas"
-                aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <ul class="navbar-nav bg-black m-0 p-4 rounded-3 ms-5 mb-5 mb-lg-0 ">
-                <li class="nav-item letterTransition" data-bs-dismiss="offcanvas">
-                    <a class="nav-link active text-primary" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item letterTransition" data-bs-dismiss="offcanvas">
-                    <a class="nav-link text-white text-primary-hover" href="#about">About</a>
-                </li>
-                <li class="nav-item letterTransition" data-bs-dismiss="offcanvas">
-                    <a class="nav-link text-white text-primary-hover" aria-current="page"
-                        href="#education">Education</a>
-                </li>
-                <li class="nav-item letterTransition" data-bs-dismiss="offcanvas">
-                    <a class="nav-link text-white text-primary-hover" aria-current="page" href="#skill">Skill</a>
-                </li>
-                <li class="nav-item letterTransition" data-bs-dismiss="offcanvas">
-                    <a class="nav-link text-white text-primary-hover" aria-current="page"
-                        href="#achievements">Achievements</a>
-                </li>
-                <li class="nav-item letterTransition" data-bs-dismiss="offcanvas">
-                    <a class="nav-link text-white text-primary-hover" aria-current="page" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item letterTransition" data-bs-dismiss="offcanvas">
-                    <a class="nav-link text-white text-primary-hover" aria-current="page" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <header class="position-sticky">
-        <nav class="navbar navbar-dark navbar-expand-md">
-            <a class="navbar-brand align-items-center col-1 p-0 d-flex" href="https://khushpatel00.github.io/">
-                <p class="ps-lg-5 ps-3 p-0 h2 logoText">K.</p>
-            </a>
-            <div class="container col-10 d-flex justify-content-end ms-auto">
-                <button class="navbar-toggler border-0 ms-auto" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
-                    <i class="fa-solid fa-bars-staggered"></i>
-
-                </button>
-                <div class="collapse navbar-collapse ms-auto" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
-                        <li class="nav-item letterTransition">
-                            <a class="nav-link active text-primary" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item letterTransition">
-                            <a class="nav-link text-white text-primary-hover" aria-current="page"
-                                href="#about">About</a>
-                        </li>
-                        <li class="nav-item letterTransition">
-                            <a class="nav-link text-white text-primary-hover" aria-current="page"
-                                href="#education">Education</a>
-                        </li>
-                        <li class="nav-item letterTransition">
-                            <a class="nav-link text-white text-primary-hover" aria-current="page"
-                                href="#skill">Skill</a>
-                        </li>
-                        <li class="nav-item letterTransition">
-                            <a class="nav-link text-white text-primary-hover" aria-current="page"
-                                href="#achievements">Achievements</a>
-                        </li>
-                        <li class="nav-item moreOptions">
-                            <a class="nav-link text-white letterTransition text-primary-hover" aria-current="page"
-                                href="#projects">Projects</a>
-                            <ul class="list-unstyled">
-                                <li>
-                                    <a href="projects.html"
-                                        class="text-white letterTransition text-decoration-none">Visit my all Projects
-                                        <i class="fa-solid fa-arrow-right" style="transform: rotate(-45deg);"></i></a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item letterTransition">
-                            <a class="nav-link text-white text-primary-hover" aria-current="page"
-                                href="#contact">Contact</a>
-                        </li>
-                    </ul>
+    <header class="fixed w-[95%] top-0 z-50 bg-black/30 backdrop-blur-sm border-b rounded-2xl my-5 border-gray-900/10" style="margin-inline: 2.5%;">
+        <div class="mx-auto xl:max-w-screen px-4 sm:px-6 lg:px-8">
+            <div class="flex h-16 items-center justify-between">
+                <div class="md:flex md:items-center md:gap-12 gTopFade">
+                    <a class="block" href="#"><img src="src/img/favicon.png" class="max-w-1/5 " alt=""></a>
+                </div>
+                    <div class="block gTopFade" onclick="navTrigger()">
+                        <button
+                            class="rounded-lg p-2 transition bg-gray-900 text-white/50 hover:text-white">
+                            <svg class="size-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
-        </nav>
+        </div>
     </header>
+    <div class="fixed top-24 end-5 z-40">
+        <nav class="text-white w-auto justify-end p-4 hidden rounded-2xl">
+            <div class="flex justify-end">
+                <ul class=" p-4 text-3xl leading-16 px-20 ">
+                    <li class="gTopFadeLi"><a href="#">Home</a></li>
+                    <li class="gTopFadeLi"><a href="#">Projects</a></li>
+                    <li class="gTopFadeLi"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
     <!-- header end -->
     <!-- banner start -->
 
@@ -749,11 +693,9 @@
         </div>
     </section>
     <!-- contact end -->
-    <script src="assets/js/particles.min.js"></script>
     <script src="assets/js/smooth-scroll.js"></script>
-    <script src="assets/js/jquery-3.6.1.min.js"></script>
     <script src="assets/js/index.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="src/script.js"></script>
 </body>
 
 </html>
